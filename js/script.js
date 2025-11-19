@@ -1,12 +1,8 @@
-let contador = 1; 
-
-function cambiarImagen(){
-    contador++
-    const imagen=document.getElementById("banner"); 
-    imagen.style.opacity=0; 
-
-    setTimeout(()=> {
-        imagen.src=`https://picsum.photos/800/400?random=${contador}`;
-        imagen.style.opacity=1
-    },300); 
-}
+console.log("Sitio cargado correctamente ");
+document.addEventListener("DOMContentLoaded", function() {
+ const form = document.querySelector("form");
+ form.addEventListener("submit", function(event) {
+ event.preventDefault();
+ alert("¡Gracias por tu mensaje!");
+ });
+});
